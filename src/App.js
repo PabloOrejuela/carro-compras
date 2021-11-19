@@ -8,7 +8,7 @@ class App extends Component{
     productos: [
       { name: 'Tomate', price: 0.50, img: '/productos/tomate.jpg' },
       { name: 'Alverjas', price: 1.00, img: '/productos/alverjas.jpg' },
-      { name: 'Lechuga', price: 0.50, img: '/productos/lechuga.jpg' },
+      { name: 'Lechuga', price: 0.50, img: '/productos/lechuga.jpg' }
     ]
   }
 
