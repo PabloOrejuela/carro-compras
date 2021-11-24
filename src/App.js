@@ -1,6 +1,8 @@
 import { Component } from 'react'
-import logo from './logo.svg';
-import './App.css';
+import Productos from './components/Productos'
+import Layout from './components/Layout'
+import Title from './components/Title'
+import NavBar from './components/NavBar'
 
 class App extends Component{
 
@@ -15,7 +17,14 @@ class App extends Component{
   render(){
     return(
       <div>
-        <p>Hola Mundo </p>
+        <NavBar />
+        <Layout>
+          <Title />
+          <Productos 
+            agregarAlCarro = {() => console.log('Agregado')}
+            productos = {this.state.productos}
+          />
+        </Layout>
       </div>
     )
   }
