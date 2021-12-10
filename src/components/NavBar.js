@@ -1,5 +1,6 @@
 import { Component } from "react"
 import Logo from './Logo'
+import Carrito from './Carrito'
 
 const styles = {
     navbar: {
@@ -17,10 +18,15 @@ const styles = {
 class NavBar extends Component{
 
     render(){
+        const { carrito, esCarroVisible, mostrarCarrito } = this.props
         return(
             <nav style={styles.navbar}>
                 <Logo />
-                <p>Carro</p>
+                <Carrito 
+                    carrito={carrito} 
+                    esCarroVisible={esCarroVisible}
+                    mostrarCarrito={mostrarCarrito}
+                />
             </nav>
         )
     }
